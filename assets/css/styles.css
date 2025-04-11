@@ -50,7 +50,7 @@ a {
 }
 
 a:hover {
-    color: #3a57d7;
+    color:#ffffff;
 }
 
 ul {
@@ -641,6 +641,8 @@ img {
     border-radius: 5px;
     font-size: 0.9rem;
     transition: var(--transition);
+    flex: 1;
+    text-align: center;
 }
 
 .project-link:hover {
@@ -914,6 +916,8 @@ img {
 .contact-item {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 15px;
     padding: 5px 0;
     transition: transform 0.2s ease;
@@ -929,6 +933,9 @@ img {
 .contact-item.fade-in {
     opacity: 1;
     transform: translateX(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-item i {
@@ -993,53 +1000,75 @@ img {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: rgba(var(--primary-rgb), 0.1);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
     font-size: 1.2rem;
-    transition: all 0.3s ease;
+    transition: var(--transition);
 }
 
 .contact-social a:hover {
-    background-color: var(--primary-color);
+    background-color: #009fb3;
     color: white;
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
 }
 
 /* 页脚 */
 .footer {
-    background-color: var(--bg-color);
+    background-color: #ffffff;
     padding: 30px 0;
-    border-top: 1px solid var(--border-color);
+    text-align: center;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+
+.footer-projects {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: rgba(0, 188, 212, 0.1);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.footer-projects p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+    text-align: center;
+}
+
+.footer-projects a {
+    color: var(--primary-color);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.footer-projects a:hover {
+    color: #3a57d7;
+    text-decoration: underline;
 }
 
 .social-links {
     display: flex;
     gap: 15px;
+    margin-top: 15px;
 }
 
 .social-links a {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(var(--primary-rgb), 0.1);
     border-radius: 50%;
-    color: var(--primary-color);
-    transition: var(--transition);
-}
-
-.social-links a:hover {
     background-color: var(--primary-color);
     color: white;
-    transform: translateY(-3px);
+    font-size: 1.2rem;
+    transition: var(--transition);
 }
 
 /* 回到顶部按钮 */
@@ -1068,7 +1097,7 @@ img {
 }
 
 .back-to-top:hover {
-    background-color: #3a57d7;
+    background-color:var(--primary-color);
     transform: translateY(-5px);
 }
 
@@ -1903,20 +1932,22 @@ body.loaded .footer {
 /* 社交链接色彩 */
 .social-links a {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: rgba(var(--primary-rgb), 0.1);
     border-radius: 50%;
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
     transition: var(--transition);
 }
 
 .social-links a:hover {
-    background-color: var(--primary-color);
+    background-color: #009fb3;
     color: white;
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
 }
 
 /* 头像占位符 */
@@ -1993,4 +2024,184 @@ body.loaded .footer {
     .nav-link.active::after {
         width: 100%;
     }
+}
+
+/* 微信二维码样式 */
+.wechat-qrcode {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0;
+}
+
+.wechat-qrcode img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.wechat-qrcode img:hover {
+    transform: scale(1.05);
+}
+
+/* 联系我区域样式优化 - 更加优雅的设计 */
+.contact-wechat {
+    /* background: linear-gradient(145deg, #ffffff, #f5f9ff); */
+    border-radius: 16px;
+    padding: 0;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); */
+    /* transition: all 0.4s ease; */
+    overflow: hidden;
+}
+
+.contact-wechat:hover {
+    /* box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08); */
+    /* transform: translateY(-5px); */
+}
+
+.wechat-content {
+    display: flex;
+    align-items: center;
+}
+
+.wechat-info {
+    padding: 25px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.wechat-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #07C160, #06ad54);
+    box-shadow: 0 5px 15px rgba(7, 193, 96, 0.25);
+    margin-bottom: 5px;
+}
+
+.wechat-icon i {
+    font-size: 30px;
+    color: white;
+}
+.wechat-text{
+    text-align: center;
+}
+.wechat-text h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 8px 0;
+}
+
+.wechat-text p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+.wechat-qrcode {
+    padding: 30px;
+    border-left: 1px solid rgba(235, 240, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.wechat-qrcode img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.wechat-qrcode img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .wechat-content {
+        flex-direction: column;
+    }
+    
+    .wechat-info {
+        width: 100%;
+        padding: 25px 25px 15px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .wechat-qrcode {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid rgba(235, 240, 255, 0.8);
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-item-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .contact-item-group .contact-item {
+        flex: 0 0 100%;
+    }
+    
+    .wechat-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .wechat-icon i {
+        font-size: 24px;
+    }
+    
+    .wechat-text h4 {
+        font-size: 16px;
+    }
+    
+    .wechat-text p {
+        font-size: 13px;
+    }
+    
+    .wechat-qrcode {
+        padding: 20px;
+    }
+    
+    .wechat-qrcode img {
+        width: 120px;
+        height: 120px;
+    }
+}
+/* 联系人信息组样式 */
+.contact-item-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-item-group .contact-item {
+    flex: 0 0 48%;
+}
+
+/* 微信联系区域样式优化 - 更加优雅的设计 */
+.contact-wechat {
+    /* background: linear-gradient(145deg, #ffffff, #f5f9ff); */
+    border-radius: 16px;
+    padding: 0;
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); */
+    /* transition: all 0.4s ease; */
+    overflow: hidden;
 }

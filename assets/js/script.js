@@ -1,5 +1,5 @@
 // DOM元素
-const header = document.getElementById('header');
+const header = document.querySelector('.project-nav') || document.getElementById('header');
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const navList = document.querySelector('.nav-list');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -417,44 +417,52 @@ function typeWriter() {
 // 滚动效果
 window.addEventListener('scroll', function() {
     // 导航栏滚动效果
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
+    if (header) {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
     }
 
     // 回到顶部按钮显示/隐藏
-    if (window.scrollY > 500) {
-        backToTop.classList.add('visible');
-    } else {
-        backToTop.classList.remove('visible');
+    if (backToTop) {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
     }
 
     // 高亮当前滚动位置对应的导航链接
     highlightNavOnScroll();
 
     // 滚动进度条
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrollPercent = (scrollTop / docHeight) * 100;
-    scrollProgress.style.width = scrollPercent + '%';
+    if (scrollProgress) {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        scrollProgress.style.width = scrollPercent + '%';
+    }
 });
 
 // 移动端菜单切换
-mobileMenuToggle.addEventListener('click', function() {
-    this.classList.toggle('active');
-    navList.classList.toggle('active');
-    
-    // 切换body滚动锁定，防止菜单打开时页面可滚动
-    if (navList.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
-    } else {
-        // 延迟解锁滚动，等待菜单关闭动画完成
-        setTimeout(() => {
-            document.body.style.overflow = '';
-        }, 300);
-    }
-});
+if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navList.classList.toggle('active');
+        
+        // 切换body滚动锁定，防止菜单打开时页面可滚动
+        if (navList.classList.contains('active')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            // 延迟解锁滚动，等待菜单关闭动画完成
+            setTimeout(() => {
+                document.body.style.overflow = '';
+            }, 300);
+        }
+    });
+}
 
 // 点击导航链接后关闭移动菜单
 navLinks.forEach(link => {
@@ -531,6 +539,7 @@ document.querySelectorAll('.project-placeholder').forEach(img => {
 // 滚动进度条功能
 function initScrollProgress() {
     const scrollProgress = document.querySelector('.scroll-progress');
+    if (!scrollProgress) return; // 如果元素不存在，直接返回
     
     window.addEventListener('scroll', () => {
         const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
