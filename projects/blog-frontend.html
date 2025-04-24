@@ -126,26 +126,32 @@
                         <h2><i class="fas fa-images"></i> 项目展示</h2>
                         <div class="project-images-row">
                             <div class="project-image-item">
-                                <img src="../assets/images/projects/frontend-placeholder.png" alt="博客详情页展示">
+                                <img src="../assets/images/projects/frontend-placeholder.png" alt="博客详情页展示" class="zoomable-image">
                                 <div class="image-caption">博客首页 - 首页展示</div>
                             </div>
                             <div class="project-image-item">
-                                <img src="../assets/images/projects/frontend-posts.png" alt="响应式设计展示">
+                                <img src="../assets/images/projects/frontend-posts.png" alt="响应式设计展示" class="zoomable-image">
                                 <div class="image-caption">博客详情页 - 文章内容展示</div>
                             </div>
                         </div>
 
                         <div class="project-images-row">
                             <div class="project-image-item">
-                                <img src="../assets/images/projects/frontend-mobile.png" alt="博客详情页展示">
+                                <img src="../assets/images/projects/frontend-mobile.png" alt="博客详情页展示" class="zoomable-image">
                                 <div class="image-caption">移动端 - 文章列表</div>
                             </div>
                             <div class="project-image-item">
-                                <img src="../assets/images/projects/frontend-mobile-posts.png" alt="响应式设计展示">
+                                <img src="../assets/images/projects/frontend-mobile-posts.png" alt="响应式设计展示" class="zoomable-image">
                                 <div class="image-caption">移动端 - 文章详情</div>
                             </div>
                         </div>
                     </section>
+
+                    <!-- 图片放大模态框 -->
+                    <div class="image-modal" id="imageModal">
+                        <span class="modal-close">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
 
                     <section class="project-description">
                         <h2><i class="fas fa-link"></i> 项目链接</h2>
@@ -263,29 +269,42 @@
             });
         });
 
-        // 图片点击放大效果
-        document.querySelectorAll('.project-gallery img').forEach(img => {
-            img.addEventListener('click', function() {
-                const modal = document.createElement('div');
-                modal.className = 'image-modal';
-                modal.innerHTML = `
-                    <div class="modal-content">
-                        <img src="${this.src}" alt="${this.alt}">
-                        <button class="modal-close">&times;</button>
-                    </div>
-                `;
-                document.body.appendChild(modal);
-                
-                modal.querySelector('.modal-close').addEventListener('click', () => {
-                    modal.remove();
-                });
-                
-                modal.addEventListener('click', (e) => {
-                    if (e.target === modal) {
-                        modal.remove();
-                    }
+        // 图片放大功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const closeBtn = document.querySelector('.modal-close');
+            
+            // 为所有可放大的图片添加点击事件
+            document.querySelectorAll('.zoomable-image').forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'block';
+                    modalImg.src = this.src;
+                    document.body.style.overflow = 'hidden'; // 防止背景滚动
                 });
             });
+            
+            // 点击关闭按钮关闭模态框
+            closeBtn.addEventListener('click', closeModal);
+            
+            // 点击模态框外部关闭
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // ESC键关闭模态框
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.style.display === 'block') {
+                    closeModal();
+                }
+            });
+
+            function closeModal() {
+                modal.style.display = 'none';
+                document.body.style.overflow = ''; // 恢复背景滚动
+            }
         });
     </script>
 </body>

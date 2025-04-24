@@ -175,6 +175,19 @@ window.addEventListener('load', function() {
             easing: 'ease-in-out',
             once: true
         });
+        
+        // 初始化导航高亮
+        highlightNavOnScroll();
+        
+        // 添加滚动事件监听
+        window.addEventListener('scroll', function() {
+            requestAnimationFrame(highlightNavOnScroll);
+        });
+        
+        // 添加窗口大小改变事件监听
+        window.addEventListener('resize', function() {
+            requestAnimationFrame(highlightNavOnScroll);
+        });
     }, isMobile() ? 300 : 500); // 移动端更快的加载时间
 });
 
@@ -494,20 +507,36 @@ navLinks.forEach(link => {
 // 根据滚动位置高亮导航链接
 function highlightNavOnScroll() {
     const sections = document.querySelectorAll('section');
-    const scrollPosition = window.scrollY + 100;
+    const scrollPosition = window.scrollY;
+    const windowHeight = window.innerHeight;
+    let currentSection = '';
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
+        const sectionTop = section.offsetTop - 100; // 调整偏移量
         const sectionHeight = section.offsetHeight;
         const sectionId = section.getAttribute('id');
         
         if (sectionId) {
-            const correspondingNavLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-            
-            if (correspondingNavLink && scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                navLinks.forEach(link => link.classList.remove('active'));
-                correspondingNavLink.classList.add('active');
+            // 判断当前滚动位置是否在section范围内
+            if (scrollPosition >= sectionTop && scrollPosition < (sectionTop + sectionHeight)) {
+                currentSection = sectionId;
             }
+            
+            // 特殊处理：如果是最后一个section且已滚动到底部
+            if (section === sections[sections.length - 1] && 
+                (window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50) {
+                currentSection = sectionId;
+            }
+        }
+    });
+
+    // 更新导航链接状态
+    navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+        if (href && href.substring(1) === currentSection) {
+            link.classList.add('active');
+        } else {
+            link.classList.remove('active');
         }
     });
 }
