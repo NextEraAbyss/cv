@@ -389,8 +389,8 @@ function typeWriter() {
     if (!typewriterElement) return;
     
     const texts = [
-        "专注全栈开发和微服务架构设计",
-        "精通前端技术栈与Node.js后端开发",
+        "专注前端开发兼具后端及大前端全栈能力",
+        "精通前端技术栈与Golang后端开发",
         "擅长数据库设计和API开发",
         "热爱创新和技术挑战"
     ];
