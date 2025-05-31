@@ -34,7 +34,7 @@
 
 <!-- 
 可以在这里添加项目截图
-![预览图](./images/preview.png)
+![预览图](./images/preview.jpg)
 -->
 
 ## ✨ 核心功能 | Features
