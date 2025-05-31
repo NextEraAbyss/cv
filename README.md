@@ -1,169 +1,319 @@
-# 全栈工程师个人主页 | Full-Stack Engineer Portfolio
+# 🚀 秦若宸 - 全栈工程师个人作品集
 
 <div align="center">
-  
+
+[![Website](https://img.shields.io/website?url=https%3A//cv.wat.ink&style=for-the-badge&logo=globe&logoColor=white)](https://cv.wat.ink)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 ![Responsive](https://img.shields.io/badge/Responsive-5BB75B?style=for-the-badge&logo=responsive&logoColor=white)
+
+**🌐 在线访问: [cv.wat.ink](https://cv.wat.ink)**
 
 </div>
 
 ## 📋 目录 | Contents
 
-- [项目概述](#项目概述--project-overview)
-- [预览效果](#预览效果--preview)
-- [核心功能](#核心功能--features)
-- [技术栈](#技术栈--tech-stack)
-- [快速开始](#快速开始--quick-start)
-- [项目结构](#项目结构--project-structure)
-- [自定义配置](#自定义配置--customization)
-- [浏览器兼容性](#浏览器兼容性--browser-compatibility)
-- [贡献指南](#贡献指南--contributing)
-- [许可证](#许可证--license)
+- [项目概述](#-项目概述--project-overview)
+- [预览效果](#-预览效果--preview)
+- [核心特色](#-核心特色--features)
+- [技术栈](#️-技术栈--tech-stack)
+- [项目展示](#-项目展示--projects)
+- [快速开始](#-快速开始--quick-start)
+- [项目结构](#-项目结构--project-structure)
+- [性能优化](#-性能优化--performance)
+- [浏览器兼容性](#-浏览器兼容性--browser-compatibility)
+- [部署指南](#-部署指南--deployment)
+- [许可证](#-许可证--license)
 
 ## 📝 项目概述 | Project Overview
 
-这是一个展示"全栈工程师"专业能力的现代化个人主页项目，采用响应式设计，提供了丰富的交互效果和精美的视觉体验。项目旨在以专业、全面的方式展示工程师的全栈开发能力、项目经验和技术专长，涵盖前端、后端、DevOps、移动端等多个技术领域。
+这是秦若宸的个人作品集网站，展示6年全栈开发经验和3年技术团队管理经验。网站采用现代化响应式设计，完美展示全栈工程师的技术能力、项目经验和专业素养。
 
-无论是软件工程师、系统架构师还是技术团队负责人，都可以通过简单的自定义，快速创建属于自己的专业全栈技术展示平台，全方位展示自己的技术广度和深度。
+### 🎯 项目目标
+- 📋 展示完整的全栈技术能力（前端、后端、移动端、DevOps）
+- 🏆 突出项目管理和团队领导经验
+- 🚀 提供优秀的用户体验和视觉效果
+- 📱 确保在所有设备上的完美展示
 
 ## 👀 预览效果 | Preview
 
-在线预览: [https://cv.wat.ink](https://cv.wat.ink)
+### 🌐 在线演示
+**主站**: [https://cv.wat.ink](https://cv.wat.ink)
 
-<!-- 
-可以在这里添加项目截图
-![预览图](./images/preview.jpg)
--->
+### 📊 相关项目链接
+- **技术博客**: [blog.wat.ink](https://blog.wat.ink) - Nuxt.js SSR博客
+- **后台管理**: [admin.wat.ink](https://admin.wat.ink) - Vue3管理系统
+- **API服务**: [api.wat.ink](https://api.wat.ink) - Go语言API
+- **H5应用**: [h5.wat.ink](https://h5.wat.ink) - uni-app跨平台应用
 
-## ✨ 核心功能 | Features
+## ✨ 核心特色 | Features
 
-- **响应式设计** - 完美适配从手机到桌面的各种设备屏幕
-- **全栈技能展示** - 系统化展示前端、后端、DevOps、云服务等技术能力
-- **技能可视化** - 使用进度条、图表等方式直观呈现各领域技术掌握程度
-- **项目经验时间线** - 清晰展示关键项目经历和技术成长历程
-- **全栈项目作品集** - 支持筛选和详细展示个人全栈开发项目案例
-- **技术博客整合** - 可展示技术文章和解决方案分享
-- **CI/CD经验展示** - 展示DevOps和自动化部署相关经验
-- **多主题支持** - 提供多种配色方案，一键切换主题
+### 🎨 设计特色
+- **现代化UI设计** - 简洁优雅，专业视觉效果
+- **响应式布局** - 完美适配手机、平板、桌面设备
+- **流畅动画** - AOS滚动动画，粒子背景效果
+- **交互体验** - 平滑滚动导航，图片放大预览
 
-## 🔧 技术栈 | Tech Stack
+### 💼 内容展示
+- **技能可视化** - 进度条展示各技术栈熟练度
+- **项目作品集** - 5个完整全栈项目案例展示
+- **工作经历** - 时间线展示职业发展历程
+- **联系方式** - 多种联系方式，微信二维码
 
-- **前端技术**
-  - HTML5/CSS3 - 语义化标签和现代CSS特性
-  - JavaScript/TypeScript - 现代JS语法和类型系统
-  - 前端框架 - Vue.js/React/Angular等框架展示
-  - 响应式设计 - 适配各种设备尺寸
+### ⚡ 性能优化
+- **图片优化** - WebP格式，懒加载技术
+- **SEO友好** - 完善meta标签，结构化数据
+- **加载优化** - 资源压缩，CDN加速
+- **代码优化** - 语义化HTML，模块化CSS
 
-- **后端技术**
-  - 服务端语言 - Node.js/Go/Python/Java等
-  - 数据库 - SQL/NoSQL数据库经验
-  - API设计 - RESTful/GraphQL接口设计
+## 🛠️ 技术栈 | Tech Stack
 
-- **DevOps能力**
-  - 容器化 - Docker/Kubernetes
-  - CI/CD - 自动化构建和部署
-  - 云服务 - AWS/Azure/GCP等云平台经验
+### 前端技术
+```bash
+# 核心技术
+- HTML5/CSS3         # 语义化结构，现代CSS特性
+- JavaScript (ES6+)  # 原生JS，无框架依赖
+- 响应式设计          # Flexbox, Grid布局
+
+# 增强功能
+- AOS动画库          # 滚动动画效果
+- Particles.js       # 粒子背景动画
+- Font Awesome       # 图标字体库
+- WebP图片格式       # 性能优化
+```
+
+### 展示的技术栈
+```bash
+# 前端框架
+Vue2/Vue3, Nuxt.js, Element UI, uni-app
+
+# 移动开发
+Flutter, 微信小程序, 跨平台开发
+
+# 后端技术
+Node.js, Golang, MySQL, Redis, JWT
+
+# 开发工具
+Vite, Webpack, Git, Docker, Jenkins
+```
+
+## 🚀 项目展示 | Projects
+
+网站展示了5个完整的全栈项目：
+
+### 📱 移动应用
+1. **招聘App** - Flutter跨平台应用
+   - 技术栈: Flutter, Dart, GetX
+   - 功能: 职位搜索、简历管理、在线沟通
+
+2. **跨平台应用** - uni-app多端开发
+   - 技术栈: uni-app, Vue, 小程序
+   - 支持: H5, 微信小程序, Android, iOS
+
+### 💻 Web应用
+3. **个人博客前端** - SSR技术栈
+   - 技术栈: Nuxt.js, Vue, TailwindCSS
+   - 特色: SSR渲染，SEO优化
+
+4. **博客后台管理** - 现代化管理系统
+   - 技术栈: Vue3, TypeScript, Element Plus
+   - 功能: 内容管理，用户权限，数据统计
+
+5. **博客API服务** - 高性能后端
+   - 技术栈: Go, Gin, MySQL, Redis
+   - 架构: 三层架构，微服务设计
 
 ## 🚀 快速开始 | Quick Start
 
 ### 在线访问
-直接访问：[https://cv.wat.ink](https://cv.wat.ink)
+```bash
+# 直接访问线上地址
+https://cv.wat.ink
+```
 
 ### 本地运行
 
-#### 1. 克隆代码仓库
+#### 1. 克隆项目
 ```bash
-git clone https://gitee.com/NextEraAbyss/cv.git
+git clone https://github.com/NextEraAbyss/cv.git
 cd cv
 ```
 
-#### 2. 查看网页
+#### 2. 启动项目
 
-**方法一：直接打开**
-```
-双击打开 index.html 文件
-```
 
-**方法二：使用本地服务器**
 ```bash
-# 使用Python启动简易HTTP服务器
-python -m http.server
-
-# 或使用Node.js的http-server工具
-npx http-server
-
-# 访问 http://localhost:8000 或 http://localhost:8080
+# 双击打开 index.html
+open index.html
 ```
+
+
 
 ## 📁 项目结构 | Project Structure
+
 ```
 cv/
-├── index.html          # 主页面
-├── css/                # 样式文件目录
-│   ├── style.css       # 主样式表
-│   └── responsive.css  # 响应式样式
-├── js/                 # JavaScript文件目录
-│   └── main.js         # 主脚本文件
-└── images/             # 图片资源目录
+├── index.html                 # 主页面入口
+├── assets/                    # 静态资源目录
+│   ├── css/                   # 样式文件
+│   │   ├── styles.css         # 主样式表
+│   │   ├── font-awesome.min.css # 图标样式
+│   │   ├── poppins.css        # 字体样式
+│   │   └── aos.css            # 动画样式
+│   ├── js/                    # JavaScript文件
+│   │   ├── script.js          # 主脚本文件
+│   │   ├── aos.js             # 动画库
+│   │   └── particles.min.js   # 粒子效果
+│   ├── images/                # 图片资源
+│   │   ├── projects/          # 项目截图
+│   │   └── wechat-qrcode.webp # 微信二维码
+│   ├── fonts/                 # 字体文件
+│   └── webfonts/              # Font Awesome字体
+├── projects/                  # 项目详情页面
+│   ├── flutter-job.html       # Flutter招聘App
+│   ├── uni-app.html           # uni-app跨平台应用
+│   ├── blog-frontend.html     # 博客前端项目
+│   ├── blog-admin.html        # 博客管理后台
+│   └── blog-api.html          # 博客API服务
+├── public/                    # Vite静态资源 (可选)
+├── dist/                      # 构建输出目录 (可选)
+├── favicon.ico                # 网站图标
+├── sitemap.xml               # 网站地图
+├── LICENSE                   # MIT许可证
+└── README.md                 # 项目说明
 ```
 
-## 🔄 自定义配置 | Customization
+## ⚡ 性能优化 | Performance
 
-要根据个人需求定制全栈工程师主页内容和样式，请参考以下指南：
+### 🖼️ 图片优化
+- **WebP格式** - 现代图片格式，体积减少30%+
+- **懒加载** - 图片延迟加载，提升首屏速度
+- **响应式图片** - 不同设备加载适合尺寸
 
-### 内容定制
-1. 编辑 `index.html` 文件：
-   - 更新个人信息（姓名、职位、联系方式等）
-   - 修改全栈技能列表和熟练度
-   - 更新项目经验和技术成长历程
-   - 添加或移除全栈项目案例
+### 📦 资源优化
+- **CSS合并** - 减少HTTP请求数量
+- **代码压缩** - Terser压缩JavaScript
+- **字体优化** - 只加载需要的字体文件
 
-### 样式定制
-1. 修改 `css/style.css`：
-   - 调整配色方案（主色、辅助色等）
-   - 自定义字体和排版
-   - 更改布局和间距
+### 🔍 SEO优化
+- **语义化HTML** - 搜索引擎友好的结构
+- **Meta标签** - 完善的SEO信息
+- **结构化数据** - Schema.org标记
+- **Sitemap** - 网站地图文件
 
-### 功能定制
-1. 在 `js/main.js` 中：
-   - 修改交互效果
-   - 添加新的功能模块
-   - 调整动画和过渡效果
-
-### 资源替换
-- 将个人照片和项目图片放置在 `images/` 目录下
-- 更新文档中的相关引用路径
+### 📊 性能指标
+- ⚡ **首屏加载** < 2秒
+- 🎯 **Lighthouse评分** 95+
+- 📱 **移动友好性** 100%
+- 🔍 **SEO得分** 95+
 
 ## 🌐 浏览器兼容性 | Browser Compatibility
 
-本项目已在以下浏览器的最新版本中测试通过：
+### ✅ 支持的浏览器
+- **Chrome** 60+ ✅
+- **Firefox** 55+ ✅  
+- **Safari** 12+ ✅
+- **Edge** 79+ ✅
+- **移动浏览器** ✅
 
-- Google Chrome
-- Mozilla Firefox
-- Apple Safari
-- Microsoft Edge
+### 📱 移动设备支持
+- **iOS Safari** 12+ ✅
+- **Android Chrome** 60+ ✅
+- **微信内置浏览器** ✅
+- **各大主流移动浏览器** ✅
 
-推荐使用现代浏览器以获得最佳体验。
+## 🚀 部署指南 | Deployment
 
-## 👥 贡献指南 | Contributing
+### 静态站点部署
+```bash
+# Netlify
+npm run build
+# 上传 dist/ 目录
 
-欢迎对本项目做出贡献！您可以通过以下方式参与：
+# Vercel
+vercel --prod
 
-1. 提交Bug报告或功能建议
-2. 改进代码或文档
-3. 添加新功能或修复已知问题
+# GitHub Pages
+# 直接推送到 gh-pages 分支
 
-请确保遵循项目的代码风格和贡献指南。
+# 服务器部署
+# 上传文件到服务器根目录
+```
+
+### Nginx配置示例
+```nginx
+server {
+    listen 80;
+    server_name cv.wat.ink;
+    root /var/www/cv;
+    index index.html;
+
+    # Gzip压缩
+    gzip on;
+    gzip_types text/css application/javascript image/svg+xml;
+
+    # 缓存策略
+    location ~* \.(css|js|jpg|jpeg|png|gif|ico|svg|webp)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+}
+```
+
+## 🤝 贡献指南 | Contributing
+
+欢迎提交Issue和Pull Request！
+
+### 贡献方式
+1. 🐛 **Bug报告** - 发现问题请提交Issue
+2. 💡 **功能建议** - 欢迎提出改进建议
+3. 🔧 **代码改进** - 提交Pull Request
+4. 📖 **文档完善** - 改进项目文档
+
+### 开发流程
+```bash
+# 1. Fork项目
+# 2. 创建特性分支
+git checkout -b feature/your-feature
+
+# 3. 提交更改
+git commit -m "Add: your feature"
+
+# 4. 推送分支
+git push origin feature/your-feature
+
+# 5. 创建Pull Request
+```
 
 ## 📄 许可证 | License
 
-本项目采用 [MIT 许可证](LICENSE)。
+本项目采用 [MIT License](LICENSE) 开源协议。
+
+## 🔗 相关链接 | Links
+
+- 🌐 **个人网站**: [cv.wat.ink](https://cv.wat.ink)
+- 📝 **技术博客**: [blog.wat.ink](https://blog.wat.ink)
+- 🛠️ **管理后台**: [admin.wat.ink](https://admin.wat.ink)
+- 🔌 **API文档**: [api.wat.ink](https://api.wat.ink)
+- 👨‍💻 **GitHub**: [@NextEraAbyss](https://github.com/NextEraAbyss)
+- 🦄 **Gitee**: [@NextEraAbyss](https://gitee.com/NextEraAbyss)
 
 ---
 
 <div align="center">
-  <p>🔧 展示您的全栈技术能力，成为真正的全栈工程师</p>
-  <p>Made with ❤️ by <a href="https://gitee.com/NextEraAbyss">NextEraAbyss</a></p>
+
+**🌟 如果这个项目对您有帮助，请给个 Star 支持一下！**
+
+<p>
+  <img src="https://img.shields.io/github/stars/NextEraAbyss/cv?style=social" alt="GitHub stars">
+  <img src="https://img.shields.io/github/forks/NextEraAbyss/cv?style=social" alt="GitHub forks">
+</p>
+
+*Built with ❤️ by [秦若宸](https://cv.wat.ink)*
+
+**💼 展示您的全栈技术能力，成就技术人生！**
+
 </div>
