@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>博客API服务 - 项目详情 | 秦若宸</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="基于Go语言Gin框架开发的高性能博客API服务，采用三层架构设计，提供博客所需的所有接口，具有良好的安全性和扩展性。">
+    <meta name="keywords" content="Go,Gin,MySQL,Redis,JWT,API服务,后端开发,秦若宸">
+    <meta name="author" content="秦若宸">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://cv.wat.ink/projects/blog-api.html">
+    <meta property="og:title" content="博客API服务 - 项目详情 | 秦若宸">
+    <meta property="og:description" content="基于Go语言Gin框架开发的高性能博客API服务。">
+    <meta property="og:image" content="https://cv.wat.ink/assets/images/projects/blog-api.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://cv.wat.ink/projects/blog-api.html">
+    <meta property="twitter:title" content="博客API服务 - 项目详情 | 秦若宸">
+    <meta property="twitter:description" content="基于Go语言Gin框架开发的高性能博客API服务。">
+    <meta property="twitter:image" content="https://cv.wat.ink/assets/images/projects/blog-api.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cv.wat.ink/projects/blog-api.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/apple-touch-icon.png">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/poppins.css">
+    <link rel="stylesheet" href="../assets/css/aos.css">
+    <link rel="stylesheet" href="../assets/css/project-detail.css">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <!-- 页面加载器 -->
+    <div class="page-loader">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <p class="loader-text">加载中...</p>
+        </div>
+    </div>
+
+    <!-- 项目导航栏 -->
+    <nav class="project-nav">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> 返回项目
+            </a>
+            <div class="project-nav-links">
+                <a href="#overview" class="project-nav-link active">概述</a>
+                <a href="#features" class="project-nav-link">功能</a>
+                <a href="#tech" class="project-nav-link">技术</a>
+                <a href="#api" class="project-nav-link">API</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="project-detail">
+        <div class="container">
+            <div class="project-content">
+                <!-- 主要内容区 -->
+                <article class="project-main">
+                    <header class="project-header">
+                        <h1 class="project-title">博客API服务</h1>
+                        <div class="project-meta">
+                            <span class="project-date">
+                                <i class="far fa-calendar-alt"></i>
+                                2024年
+                            </span>
+                            <div class="project-tech">
+                                <span>Go</span>
+                                <span>Gin</span>
+                                <span>MySQL</span>
+                                <span>Redis</span>
+                                <span>JWT</span>
+                            </div>
+                        </div>
+                    </header>
+
+                    <section id="overview" class="project-description">
+                        <h2><i class="fas fa-info-circle"></i> 项目概述</h2>
+                        <p>这是一个基于Go语言和Gin框架开发的高性能博客API服务。采用三层架构设计（路由层、服务层、数据层），实现了完整的博客系统后端功能。项目使用MySQL作为主数据库，Redis作为缓存层，通过JWT实现用户认证，确保API的安全性和可靠性。</p>
+                        
+                        <h2><i class="fas fa-star"></i> 项目亮点</h2>
+                        <ul>
+                            <li>采用Go语言开发，性能优异</li>
+                            <li>使用Gin框架，开发效率高</li>
+                            <li>完善的缓存策略，提升响应速度</li>
+                            <li>规范的API文档和错误处理</li>
+                            <li>支持容器化部署</li>
+                        </ul>
+                    </section>
+
+                    <section id="features" class="project-description">
+                        <h2><i class="fas fa-list-check"></i> 核心功能</h2>
+                        <ul>
+                            <li>用户认证：JWT token认证，支持刷新token</li>
+                            <li>文章管理：CRUD操作，支持草稿和发布状态</li>
+                            <li>分类管理：多级分类支持，灵活的分类结构</li>
+                            <li>评论系统：多级评论，评论审核功能</li>
+                            <li>数据统计：访问量、用户增长等统计功能</li>
+                            <li>文件上传：支持图片等文件的上传和管理</li>
+                        </ul>
+                    </section>
+
+                    <section id="tech" class="project-description">
+                        <h2><i class="fas fa-code"></i> 技术栈</h2>
+                        <ul>
+                            <li>核心框架：Go + Gin</li>
+                            <li>数据库：MySQL + GORM</li>
+                            <li>缓存：Redis</li>
+                            <li>认证：JWT</li>
+                            <li>文档：Swagger</li>
+                            <li>部署：Docker + Docker Compose</li>
+                        </ul>
+                    </section>
+
+                    <section id="api" class="project-description">
+                        <h2><i class="fas fa-plug"></i> API 示例</h2>
+                        <div class="code-block">
+                            <pre><code>// 获取文章列表
+GET /api/posts
+参数：
+- page: 页码
+- size: 每页数量
+- category: 分类ID
+- tag: 标签
+- status: 状态
+
+// 获取文章详情
+GET /api/posts/:id
+
+// 创建新文章
+POST /api/posts
+{
+    "title": "文章标题",
+    "content": "文章内容",
+    "category_id": 1,
+    "tags": ["Go", "API"],
+    "status": "published"
+}
+
+// 用户认证
+POST /api/auth/login
+{
+    "username": "admin",
+    "password": "password"
+}</code></pre>
+                        </div>
+                    </section>
+
+                    <section id="gallery" class="project-gallery">
+                        <h2><i class="fas fa-images"></i> 项目展示</h2>
+                        <div class="project-images-row">
+                            <div class="project-image-item">
+                                <img src="../assets/images/projects/api-docs.png" alt="API文档展示" class="zoomable-image">
+                                <div class="image-caption">API文档展示</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- 图片放大模态框 -->
+                    <div class="image-modal" id="imageModal">
+                        <span class="modal-close">&times;</span>
+                        <img class="modal-content" id="modalImage">
+                    </div>
+
+                    <section class="project-description">
+                        <h2><i class="fas fa-link"></i> 项目链接</h2>
+                        <div class="project-links">
+                            <a href="https://api.wat.ink/api/posts" target="_blank" class="btn primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                访问API
+                            </a>
+                            <a href="https://github.com/NextEraAbyss/gin-template" target="_blank" class="btn secondary">
+                                <i class="fab fa-github"></i>
+                                GitHub
+                            </a>
+                        </div>
+                    </section>
+                </article>
+
+                <!-- 侧边栏 -->
+                <aside class="project-sidebar">
+                    <div class="project-info-card">
+                        <div class="info-card-header">
+                            <h3><i class="fas fa-info-circle"></i> 项目信息</h3>
+                        </div>
+                        <div class="info-card-body">
+                            <ul class="info-list">
+                                <li>
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span>完成时间：2024年</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-code-branch"></i>
+                                    <span>项目类型：个人项目</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-clock"></i>
+                                    <span>开发周期：1个月</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-users"></i>
+                                    <span>团队规模：个人开发</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="project-info-card">
+                        <div class="info-card-header">
+                            <h3><i class="fas fa-chart-line"></i> 性能指标</h3>
+                        </div>
+                        <div class="info-card-body">
+                            <ul class="info-list">
+                                <li>
+                                    <i class="fas fa-tachometer-alt"></i>
+                                    <span>平均响应时间：< 50ms</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-server"></i>
+                                    <span>QPS：1000+</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-memory"></i>
+                                    <span>内存占用：< 20MB</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-database"></i>
+                                    <span>缓存命中率：95%+</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>© 2025 秦若宸 - 全栈开发工程师</p>
+                <div class="social-links">
+                    <a href="https://github.com/NextEraAbyss" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://gitee.com/NextEraAbyss" target="_blank"><i class="fab fa-git-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#header" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="../assets/js/aos.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <script>
+        // 图片放大功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            const closeBtn = document.querySelector('.modal-close');
+            
+            // 为所有可放大的图片添加点击事件
+            document.querySelectorAll('.zoomable-image').forEach(img => {
+                img.addEventListener('click', function() {
+                    modal.style.display = 'block';
+                    modalImg.src = this.src;
+                    document.body.style.overflow = 'hidden'; // 防止背景滚动
+                });
+            });
+            
+            // 点击关闭按钮关闭模态框
+            closeBtn.addEventListener('click', closeModal);
+            
+            // 点击模态框外部关闭
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // ESC键关闭模态框
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.style.display === 'block') {
+                    closeModal();
+                }
+            });
+
+            function closeModal() {
+                modal.style.display = 'none';
+                document.body.style.overflow = ''; // 恢复背景滚动
+            }
+        });
+    </script>
+</body>
+</html> 
