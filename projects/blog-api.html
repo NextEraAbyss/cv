@@ -180,11 +180,11 @@ POST /api/auth/login
                     <section class="project-description">
                         <h2><i class="fas fa-link"></i> 项目链接</h2>
                         <div class="project-links">
-                            <a href="https://api.wat.ink/api/posts" target="_blank" class="btn primary">
-                                <i class="fas fa-external-link-alt"></i>
+                            <a href="https://api.wat.ink/api/posts" target="_blank" class="btn api-access">
+                                <i class="fas fa-code"></i>
                                 访问API
                             </a>
-                            <a href="https://github.com/NextEraAbyss/gin-template" target="_blank" class="btn secondary">
+                            <a href="https://github.com/NextEraAbyss/gin-template" target="_blank" class="btn github">
                                 <i class="fab fa-github"></i>
                                 GitHub
                             </a>
@@ -257,56 +257,19 @@ POST /api/auth/login
                 <div class="social-links">
                     <a href="https://github.com/NextEraAbyss" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://gitee.com/NextEraAbyss" target="_blank"><i class="fab fa-git-alt"></i></a>
+                    
                 </div>
             </div>
         </div>
     </footer>
 
-    <a href="#header" class="back-to-top">
+    <a href="#" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- Scripts -->
     <script src="../assets/js/aos.js"></script>
     <script src="../assets/js/script.js"></script>
-    <script>
-        // 图片放大功能
-        document.addEventListener('DOMContentLoaded', function() {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            const closeBtn = document.querySelector('.modal-close');
-            
-            // 为所有可放大的图片添加点击事件
-            document.querySelectorAll('.zoomable-image').forEach(img => {
-                img.addEventListener('click', function() {
-                    modal.style.display = 'block';
-                    modalImg.src = this.src;
-                    document.body.style.overflow = 'hidden'; // 防止背景滚动
-                });
-            });
-            
-            // 点击关闭按钮关闭模态框
-            closeBtn.addEventListener('click', closeModal);
-            
-            // 点击模态框外部关闭
-            modal.addEventListener('click', function(e) {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-            
-            // ESC键关闭模态框
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && modal.style.display === 'block') {
-                    closeModal();
-                }
-            });
-
-            function closeModal() {
-                modal.style.display = 'none';
-                document.body.style.overflow = ''; // 恢复背景滚动
-            }
-        });
-    </script>
+    <script src="../assets/js/project-detail.js"></script>
 </body>
 </html> 

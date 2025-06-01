@@ -121,6 +121,7 @@
     padding-top: calc(var(--project-header-height) + 2rem);
     min-height: 100vh;
     background-color: var(--project-card-bg);
+    margin-bottom: 10px;
 }
 
 .project-content {
@@ -194,7 +195,6 @@
 
 .project-description {
     padding: 2rem;
-    border-bottom: 1px solid var(--project-border-color);
 }
 
 .project-description h2 {
@@ -340,6 +340,191 @@
 
 .btn.secondary:hover {
     background-color: var(--project-btn-secondary-hover);
+}
+
+/* APK下载按钮专用样式 */
+.btn.download-apk {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn.download-apk:hover {
+    background: linear-gradient(135deg, #e55a2b, #df8419);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+    color: white;
+}
+
+.btn.download-apk::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.btn.download-apk:hover::before {
+    left: 100%;
+}
+
+.btn.download-apk i {
+    margin-right: 8px;
+    animation: downloadPulse 2s infinite;
+}
+
+@keyframes downloadPulse {
+    0%, 100% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.1); 
+    }
+}
+
+/* GitHub按钮专用样式 */
+.btn.github {
+    background: linear-gradient(135deg, #333333, #24292e);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(36, 41, 46, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn.github:hover {
+    background: linear-gradient(135deg, #24292e, #1b1f23);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(36, 41, 46, 0.4);
+    color: white;
+}
+
+.btn.github::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.btn.github:hover::before {
+    left: 100%;
+}
+
+.btn.github i {
+    margin-right: 8px;
+    animation: githubPulse 3s infinite;
+}
+
+@keyframes githubPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+/* 访问网站按钮专用样式 */
+.btn.visit-site {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn.visit-site:hover {
+    background: linear-gradient(135deg, #059669, #047857);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(16, 185, 129, 0.4);
+    color: white;
+}
+
+.btn.visit-site::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.btn.visit-site:hover::before {
+    left: 100%;
+}
+
+.btn.visit-site i {
+    margin-right: 8px;
+    animation: visitPulse 2.5s infinite;
+}
+
+@keyframes visitPulse {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(-2deg); }
+    75% { transform: scale(1.1) rotate(2deg); }
+}
+
+/* API访问按钮专用样式 */
+.btn.api-access {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    color: white;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn.api-access:hover {
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+    color: white;
+}
+
+.btn.api-access::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.btn.api-access:hover::before {
+    left: 100%;
+}
+
+.btn.api-access i {
+    margin-right: 8px;
+    animation: apiPulse 2s infinite;
+}
+
+@keyframes apiPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08) rotateY(5deg); }
 }
 
 /* 侧边栏 */

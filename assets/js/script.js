@@ -558,6 +558,17 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// 回到顶部按钮点击事件
+if (backToTop) {
+    backToTop.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
 // 项目卡片图片加载失败处理
 document.querySelectorAll('.project-placeholder').forEach(img => {
     img.addEventListener('error', function() {
